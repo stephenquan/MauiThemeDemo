@@ -25,6 +25,37 @@
                 HorizontalOptions="Fill"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Text="Click me" />
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="25">
+                <Button
+                    BackgroundColor="{StaticResource LightButton}"
+                    BorderColor="{StaticResource LightButtonText}"
+                    BorderWidth="1"
+                    Clicked="OnThemeClicked"
+                    Text="Light"
+                    TextColor="{StaticResource LightButtonText}" />
+                <Button
+                    BackgroundColor="{StaticResource RedButton}"
+                    BorderColor="{StaticResource RedButtonText}"
+                    BorderWidth="1"
+                    Clicked="OnThemeClicked"
+                    Text="Red"
+                    TextColor="{StaticResource RedButtonText}" />
+                <Button
+                    BackgroundColor="{StaticResource BlueButton}"
+                    BorderColor="{StaticResource BlueButtonText}"
+                    BorderWidth="1"
+                    Clicked="OnThemeClicked"
+                    Text="Blue"
+                    TextColor="{StaticResource BlueButtonText}" />
+                <Button
+                    BackgroundColor="{StaticResource DarkButton}"
+                    BorderColor="{StaticResource DarkButtonText}"
+                    BorderWidth="1"
+                    Clicked="OnThemeClicked"
+                    Text="Dark"
+                    TextColor="{StaticResource DarkButtonText}" />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

@@ -29,9 +29,18 @@ public partial class MainPage : ContentPage
 		else
 			CounterBtn.Text = $"Clicked {count} times";
 
-		string[] themes = ["Light", "Red", "Blue", "Dark"];
-		ThemeHelper.SetTheme(themes[count % 4]);
-
 		SemanticScreenReader.Announce(CounterBtn.Text);
+	}
+
+	/// <summary>
+	/// Demonstrates changing the theme of the application.
+	/// </summary>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
+	void OnThemeClicked(object sender, EventArgs e)
+	{
+		Button button = (Button)sender;
+		string theme = button.Text;
+		ThemeHelper.SetTheme(theme);
 	}
 }
