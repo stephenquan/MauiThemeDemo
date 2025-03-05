@@ -42,5 +42,6 @@ public partial class MainPage : ContentPage
 		Button button = (Button)sender;
 		string theme = button.Text;
 		ThemeHelper.SetTheme(theme);
+		Application.Current!.UserAppTheme = theme == "Dark" ? AppTheme.Dark : AppTheme.Light;
 	}
 }

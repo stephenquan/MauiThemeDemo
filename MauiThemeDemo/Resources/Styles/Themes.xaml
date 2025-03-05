@@ -55,4 +55,24 @@
         <Setter Property="BorderWidth" Value="1" />
         <Setter Property="MinimumHeightRequest" Value="44" />
     </Style>
+
+    <Style ApplyToDerivedTypes="True" TargetType="Shell">
+        <Setter Property="Shell.BackgroundColor" Value="{DynamicResource ActiveWindow}" />
+        <Setter Property="Shell.ForegroundColor" Value="{DynamicResource ActiveWindowText}" />
+        <Setter Property="Shell.TitleColor" Value="{DynamicResource ActiveWindowText}" />
+        <!--
+        <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
+        <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray200}}" />
+        -->
+        <Setter Property="Shell.NavBarHasShadow" Value="False" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource ActiveButton}" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="{DynamicResource ActiveButtonText}" />
+        <Setter Property="Shell.TabBarTitleColor" Value="{DynamicResource ActiveButtonText}" />
+        <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource ActiveButtonText}" />
+
+        <!--
+        <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource Gray200}}" />
+        -->
+    </Style>
+
 </ResourceDictionary>
