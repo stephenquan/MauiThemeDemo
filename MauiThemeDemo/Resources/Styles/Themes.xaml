@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="MauiThemeDemo.Themes"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!--#region Active theme-->
+    <Color x:Key="ActiveWindow">White</Color>
+    <Color x:Key="ActiveWindowText">Black</Color>
+    <Color x:Key="ActiveButton">Green</Color>
+    <Color x:Key="ActiveButtonText">White</Color>
+    <!--#endregion-->
+
+    <!--#region Light theme-->
+    <Color x:Key="LightWindow">White</Color>
+    <Color x:Key="LightWindowText">Black</Color>
+    <Color x:Key="LightButton">Green</Color>
+    <Color x:Key="LightButtonText">White</Color>
+    <!--#endregion-->
+
+    <!--#region Red theme-->
+    <Color x:Key="RedWindow">White</Color>
+    <Color x:Key="RedWindowText">Red</Color>
+    <Color x:Key="RedButton">#cc0000</Color>
+    <Color x:Key="RedButtonText">White</Color>
+    <!--#endregion-->
+
+    <!--#region Blue theme-->
+    <Color x:Key="BlueWindow">White</Color>
+    <Color x:Key="BlueWindowText">Blue</Color>
+    <Color x:Key="BlueButton">#0000cc</Color>
+    <Color x:Key="BlueButtonText">White</Color>
+    <!--#endregion-->
+
+    <!--#region Dark theme-->
+    <Color x:Key="DarkWindow">Black</Color>
+    <Color x:Key="DarkWindowText">White</Color>
+    <Color x:Key="DarkButton">Black</Color>
+    <Color x:Key="DarkButtonText">White</Color>
+    <!--#endregion-->
+
+    <Style ApplyToDerivedTypes="True" TargetType="Page">
+        <Setter Property="BackgroundColor" Value="{DynamicResource ActiveWindow}" />
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource ActiveWindowText}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{DynamicResource ActiveButton}" />
+        <Setter Property="TextColor" Value="{DynamicResource ActiveButtonText}" />
+        <Setter Property="BorderColor" Value="{DynamicResource ActiveButtonText}" />
+        <Setter Property="BorderWidth" Value="1" />
+        <Setter Property="MinimumHeightRequest" Value="44" />
+    </Style>
+</ResourceDictionary>
